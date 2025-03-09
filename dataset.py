@@ -73,6 +73,7 @@ def process_example(example):
         "steps": steps,
         "answer": example["answer"],
         "model_answer": model_answer,
+        "raw_response": response
     }
 
 dataset = math500["test"].map(process_example)
